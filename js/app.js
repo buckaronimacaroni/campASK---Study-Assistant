@@ -1,3 +1,20 @@
+// Pomodoro Timer Popup logic
+document.addEventListener('DOMContentLoaded', function() {
+    const pomodoroPopup = document.getElementById('pomodoro-popup');
+    const pomodoroClose = document.getElementById('pomodoro-close');
+    if (pomodoroPopup && pomodoroClose) {
+        pomodoroClose.addEventListener('click', function() {
+            pomodoroPopup.style.display = 'none';
+        });
+        // Optional: Reopen with a keyboard shortcut (Ctrl+P)
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p') {
+                pomodoroPopup.style.display = 'flex';
+                pomodoroPopup.focus();
+            }
+        });
+    }
+});
 // DOM Elements
 const queryInput = document.getElementById('query-input');
 const askButton = document.getElementById('ask-button');

@@ -21,39 +21,183 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <!-- Global Study Reminder -->
+    <div class="study-reminder global-reminder" role="note">Remember to take a short break every 25–30 minutes!</div>
+
+        <!-- Section 1: Schools of RP (Card Form) -->
+        <section id="schools" class="dashboard-section school-section">
             <div class="container">
-                <h1>Welcome to CampASK</h1>
-                <p class="tagline">Your AI-powered academic support assistant</p>
-                <div class="search-container">
-                    <input type="text" 
-                           id="query-input" 
-                           placeholder="Ask any academic question..."
-                           aria-label="Enter your academic question">
-                    <button id="ask-button" aria-label="Submit question">Ask Now</button>
+                <h2>Schools of Republic Polytechnic</h2>
+                <div class="schools-card-grid">
+                    <div class="school-card">
+                        <h3>Applied Science</h3>
+                        <ul class="school-topics">
+                            <li>Biotechnology</li>
+                            <li>Chemistry</li>
+                            <li>Life Sciences</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Business</h3>
+                        <ul class="school-topics">
+                            <li>Marketing</li>
+                            <li>Accounting</li>
+                            <li>Business Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Engineering</h3>
+                        <ul class="school-topics">
+                            <li>Electrical Engineering</li>
+                            <li>Robotics</li>
+                            <li>Thermodynamics</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Infocomm</h3>
+                        <ul class="school-topics">
+                            <li>Database Systems</li>
+                            <li>JavaScript</li>
+                            <li>Networking Basics</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Hospitality</h3>
+                        <ul class="school-topics">
+                            <li>Event Management</li>
+                            <li>Tourism</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Sports & Health</h3>
+                        <ul class="school-topics">
+                            <li>Sports Science</li>
+                            <li>Nutrition</li>
+                            <li>Health Promotion</li>
+                        </ul>
+                    </div>
+                    <div class="school-card">
+                        <h3>Technology for the Arts, Media & Design</h3>
+                        <ul class="school-topics">
+                            <li>Media Production</li>
+                            <li>Design Thinking</li>
+                            <li>Visual Arts</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features">
+        <!-- Section 2: Study Resource Cards -->
+        <section id="resources" class="dashboard-section">
             <div class="container">
-                <h2>How CampASK Helps You</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Instant Explanations</h3>
-                        <p>Get clear explanations for complex academic concepts instantly</p>
+                <h2>Recommended Study Resources</h2>
+                <div class="resources-grid">
+                    <!-- RP Tools -->
+                    <div class="resource-card">
+                        <img src="https://img.icons8.com/color/48/000000/library.png" alt="RP Library logo" />
+                        <h3>RP Library</h3>
+                        <p>Access books, journals, and digital resources for all RP students.</p>
+                        <a href="https://libopac.rp.edu.sg/client/en_GB/home/?rm=HOME0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue" target="_blank" class="resource-btn" aria-label="Visit RP Library">Visit</a>
                     </div>
-                    <div class="feature-card">
-                        <h3>Resource Recommendations</h3>
-                        <p>Discover curated study materials tailored to your needs</p>
+                    <div class="resource-card">
+                        <img src="https://img.icons8.com/color/48/000000/online-support.png" alt="SA3.0 logo" />
+                        <h3>SA3.0</h3>
+                        <p>Student Administration portal for results, timetables, and more.</p>
+                        <a href="https://mysa.rp.edu.sg/" target="_blank" class="resource-btn" aria-label="Visit SA3.0">Visit</a>
                     </div>
-                    <div class="feature-card">
-                        <h3>24/7 Availability</h3>
-                        <p>Access help whenever you need it, day or night</p>
+                    <div class="resource-card">
+                        <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="PoliteMall logo" />
+                        <h3>PoliteMall</h3>
+                        <p>Shop for course materials, books, and RP merchandise online.</p>
+                        <a href="https://rplms.polite.edu.sg/d2l/home" target="_blank" class="resource-btn" aria-label="Visit PoliteMall">Visit</a>
+                    </div>
+                    <!-- External Resources -->
+                    <div class="resource-card">
+                        <img src="https://img.icons8.com/fluency/48/000000/source-code.png" alt="Coding icon" />
+                        <h3>W3Schools</h3>
+                        <p>Learn web development and programming interactively.</p>
+                        <a href="https://www.w3schools.com/" target="_blank" class="resource-btn" aria-label="Visit W3Schools">Visit</a>
+                    </div>
+                    <div class="resource-card">
+                        <img src="https://img.icons8.com/color/48/000000/khan-academy.png" alt="Khan Academy logo" />
+                        <h3>Khan Academy</h3>
+                        <p>Free online courses and practice for math, science, and more.</p>
+                        <a href="https://www.khanacademy.org/" target="_blank" class="resource-btn" aria-label="Visit Khan Academy">Visit</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Section 3: Study Tools & Templates -->
+        <section id="tools" class="dashboard-section">
+            <div class="container">
+                <h2>Study Tools</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>Pomofocus</h3>
+                        <p>Online Pomodoro timer to boost your productivity.</p>
+                        <a href="https://pomofocus.io/" target="_blank" class="resource-btn" aria-label="Visit Pomofocus">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Google Calendar</h3>
+                        <p>Organize your schedule and set reminders for study sessions.</p>
+                        <a href="https://calendar.google.com/" target="_blank" class="resource-btn" aria-label="Visit Google Calendar">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Notion</h3>
+                        <p>All-in-one workspace for notes, tasks, and project management.</p>
+                        <a href="https://www.notion.so/" target="_blank" class="resource-btn" aria-label="Visit Notion">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Quizlet</h3>
+                        <p>Create flashcards and study sets for any subject.</p>
+                        <a href="https://quizlet.com/" target="_blank" class="resource-btn" aria-label="Visit Quizlet">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Toggl Track</h3>
+                        <p>Track your study time and boost your productivity.</p>
+                        <a href="https://toggl.com/track/" target="_blank" class="resource-btn" aria-label="Visit Toggl Track">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Sleepytime</h3>
+                        <p>Calculate the best time to go to sleep and wake up refreshed.</p>
+                        <a href="https://sleepyti.me/" target="_blank" class="resource-btn" aria-label="Visit Sleepytime">Visit</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Noisli</h3>
+                        <p>Mix ambient sounds to improve focus and productivity.</p>
+                        <a href="https://www.noisli.com/" target="_blank" class="resource-btn" aria-label="Visit Noisli">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pomodoro Timer Popup removed as requested -->
+
+        <!-- Section 4: Revision Tips (Horizontal Scroll/Flip-Card) -->
+        <section id="revision-tips" class="dashboard-section">
+            <div class="container">
+                <h2>Revision Tips & Study Techniques</h2>
+                <div class="tips-scroll" tabindex="0" aria-label="Revision Tips">
+                    <div class="tip-card" tabindex="0">
+                        <h3>3-2-1 Revision Method</h3>
+                        <p>Write 3 things you learned, 2 interesting facts, and 1 question you still have. Helps consolidate learning.</p>
+                    </div>
+                    <div class="tip-card" tabindex="0">
+                        <h3>Active Recall vs. Rereading</h3>
+                        <p>Test yourself on material instead of just rereading. Boosts memory and understanding.</p>
+                    </div>
+                    <div class="tip-card" tabindex="0">
+                        <h3>SQ3R Reading Method</h3>
+                        <p>Survey, Question, Read, Recite, Review. Improves comprehension and retention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video section removed as requested -->
     </main>
 
     <footer>
