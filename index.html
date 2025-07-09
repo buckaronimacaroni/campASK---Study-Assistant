@@ -6,23 +6,24 @@
     <meta name="description" content="CampASK - AI-powered academic support assistant for RP students">
     <title>CampASK - Your Study Assistant</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar" role="navigation">
-            <div class="logo">CampASK</div>
-            <div class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+    <header style="position: sticky; top: 0; z-index: 1003; width: 100vw; max-width: 100vw;">
+        <div class="custom-header" style="background: #b8c6e7; padding: 32px 0 28px 0; min-height: 120px; display: flex; align-items: flex-start; justify-content: center; position: relative; flex-direction: column; width: 100vw; max-width: 100vw;">
+            <a href="homepage.html" class="oval-back-btn" aria-label="Back to Homepage" style="position: absolute; left: 32px; top: 50%; transform: translateY(-50%); background: #fff; color: #4a5fa7; border-radius: 999px; padding: 12px 38px; font-size: 1.2rem; font-family: inherit; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: none; transition: background 0.2s, color 0.2s; font-weight: 600;">&larr; Back</a>
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h1 class="main-title" style="margin: 0; font-size: 3.2rem; color: #384a7c; font-family: 'Inter', Arial, sans-serif; font-weight: 900; letter-spacing: 1px; text-align: center; line-height: 1.1;">
+                    CampASK<br><span style="font-size:2.2rem; font-weight:700; color:#4a5fa7; font-family: 'Inter', Arial, sans-serif;">Study Assistant</span>
+                </h1>
             </div>
-        </nav>
+        </div>
+        <div class="study-reminder global-reminder" role="note" style="background: #b8c6e7; color: #384a7c; font-size: 1.15rem; text-align: center; padding: 10px 0 8px 0; font-family: 'Aptos', 'Aptos Body', Arial, sans-serif; font-weight: 600; border-bottom: 1px solid #a2b3d9; margin: 0; width: 100vw; max-width: 100vw; border-radius: 0;">
+            Remember to take a short break every 25–30 minutes!
+        </div>
     </header>
 
     <main>
-        <!-- Global Study Reminder -->
-    <div class="study-reminder global-reminder" role="note">Remember to take a short break every 25–30 minutes!</div>
 
         <!-- Section 1: Schools of RP (Card Form) -->
         <section id="schools" class="dashboard-section school-section">
@@ -93,38 +94,40 @@
         <section id="resources" class="dashboard-section">
             <div class="container">
                 <h2>Recommended Study Resources</h2>
-                <div class="resources-grid">
-                    <!-- RP Tools -->
-                    <div class="resource-card">
-                        <img src="https://img.icons8.com/color/48/000000/library.png" alt="RP Library logo" />
-                        <h3>RP Library</h3>
-                        <p>Access books, journals, and digital resources for all RP students.</p>
-                        <a href="https://libopac.rp.edu.sg/client/en_GB/home/?rm=HOME0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue" target="_blank" class="resource-btn" aria-label="Visit RP Library">Visit</a>
+                <div class="resources-grid" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+                    <div style="display: flex; justify-content: center; gap: 24px; width: 100%; margin-bottom: 24px;">
+                        <div class="resource-card">
+                            <img src="https://img.icons8.com/color/48/000000/library.png" alt="RP Library logo" />
+                            <h3>RP Library</h3>
+                            <p>Access books, journals, and digital resources for all RP students.</p>
+                            <a href="https://libopac.rp.edu.sg/client/en_GB/home/?rm=HOME0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue" target="_blank" class="resource-btn" aria-label="Visit RP Library">Visit</a>
+                        </div>
+                        <div class="resource-card">
+                            <img src="https://img.icons8.com/color/48/000000/online-support.png" alt="SA3.0 logo" />
+                            <h3>SA3.0</h3>
+                            <p>Student Administration portal for results, timetables, and more.</p>
+                            <a href="https://mysa.rp.edu.sg/" target="_blank" class="resource-btn" aria-label="Visit SA3.0">Visit</a>
+                        </div>
+                        <div class="resource-card">
+                            <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="PoliteMall logo" />
+                            <h3>PoliteMall</h3>
+                            <p>Shop for course materials, books, and RP merchandise online.</p>
+                            <a href="https://rplms.polite.edu.sg/d2l/home" target="_blank" class="resource-btn" aria-label="Visit PoliteMall">Visit</a>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <img src="https://img.icons8.com/color/48/000000/online-support.png" alt="SA3.0 logo" />
-                        <h3>SA3.0</h3>
-                        <p>Student Administration portal for results, timetables, and more.</p>
-                        <a href="https://mysa.rp.edu.sg/" target="_blank" class="resource-btn" aria-label="Visit SA3.0">Visit</a>
-                    </div>
-                    <div class="resource-card">
-                        <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="PoliteMall logo" />
-                        <h3>PoliteMall</h3>
-                        <p>Shop for course materials, books, and RP merchandise online.</p>
-                        <a href="https://rplms.polite.edu.sg/d2l/home" target="_blank" class="resource-btn" aria-label="Visit PoliteMall">Visit</a>
-                    </div>
-                    <!-- External Resources -->
-                    <div class="resource-card">
-                        <img src="https://img.icons8.com/fluency/48/000000/source-code.png" alt="Coding icon" />
-                        <h3>W3Schools</h3>
-                        <p>Learn web development and programming interactively.</p>
-                        <a href="https://www.w3schools.com/" target="_blank" class="resource-btn" aria-label="Visit W3Schools">Visit</a>
-                    </div>
-                    <div class="resource-card">
-                        <img src="https://img.icons8.com/color/48/000000/khan-academy.png" alt="Khan Academy logo" />
-                        <h3>Khan Academy</h3>
-                        <p>Free online courses and practice for math, science, and more.</p>
-                        <a href="https://www.khanacademy.org/" target="_blank" class="resource-btn" aria-label="Visit Khan Academy">Visit</a>
+                    <div style="display: flex; justify-content: center; gap: 24px; width: 100%;">
+                        <div class="resource-card">
+                            <img src="https://img.icons8.com/fluency/48/000000/source-code.png" alt="Coding icon" />
+                            <h3>W3Schools</h3>
+                            <p>Learn web development and programming interactively.</p>
+                            <a href="https://www.w3schools.com/" target="_blank" class="resource-btn" aria-label="Visit W3Schools">Visit</a>
+                        </div>
+                        <div class="resource-card">
+                            <img src="https://img.icons8.com/color/48/000000/khan-academy.png" alt="Khan Academy logo" />
+                            <h3>Khan Academy</h3>
+                            <p>Free online courses and practice for math, science, and more.</p>
+                            <a href="https://www.khanacademy.org/" target="_blank" class="resource-btn" aria-label="Visit Khan Academy">Visit</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,41 +137,45 @@
         <section id="tools" class="dashboard-section">
             <div class="container">
                 <h2>Study Tools</h2>
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <h3>Pomofocus</h3>
-                        <p>Online Pomodoro timer to boost your productivity.</p>
-                        <a href="https://pomofocus.io/" target="_blank" class="resource-btn" aria-label="Visit Pomofocus">Visit</a>
+                <div class="tools-grid" style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+                    <div style="display: flex; justify-content: center; gap: 24px; width: 100%; margin-bottom: 24px;">
+                        <div class="tool-card">
+                            <h3>Pomofocus</h3>
+                            <p>Online Pomodoro timer to boost your productivity.</p>
+                            <a href="https://pomofocus.io/" target="_blank" class="resource-btn" aria-label="Visit Pomofocus">Visit</a>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Google Calendar</h3>
+                            <p>Organize your schedule and set reminders for study sessions.</p>
+                            <a href="https://calendar.google.com/" target="_blank" class="resource-btn" aria-label="Visit Google Calendar">Visit</a>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Notion</h3>
+                            <p>All-in-one workspace for notes, tasks, and project management.</p>
+                            <a href="https://www.notion.so/" target="_blank" class="resource-btn" aria-label="Visit Notion">Visit</a>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Quizlet</h3>
+                            <p>Create flashcards and study sets for any subject.</p>
+                            <a href="https://quizlet.com/" target="_blank" class="resource-btn" aria-label="Visit Quizlet">Visit</a>
+                        </div>
                     </div>
-                    <div class="tool-card">
-                        <h3>Google Calendar</h3>
-                        <p>Organize your schedule and set reminders for study sessions.</p>
-                        <a href="https://calendar.google.com/" target="_blank" class="resource-btn" aria-label="Visit Google Calendar">Visit</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>Notion</h3>
-                        <p>All-in-one workspace for notes, tasks, and project management.</p>
-                        <a href="https://www.notion.so/" target="_blank" class="resource-btn" aria-label="Visit Notion">Visit</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>Quizlet</h3>
-                        <p>Create flashcards and study sets for any subject.</p>
-                        <a href="https://quizlet.com/" target="_blank" class="resource-btn" aria-label="Visit Quizlet">Visit</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>Toggl Track</h3>
-                        <p>Track your study time and boost your productivity.</p>
-                        <a href="https://toggl.com/track/" target="_blank" class="resource-btn" aria-label="Visit Toggl Track">Visit</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>Sleepytime</h3>
-                        <p>Calculate the best time to go to sleep and wake up refreshed.</p>
-                        <a href="https://sleepyti.me/" target="_blank" class="resource-btn" aria-label="Visit Sleepytime">Visit</a>
-                    </div>
-                    <div class="tool-card">
-                        <h3>Noisli</h3>
-                        <p>Mix ambient sounds to improve focus and productivity.</p>
-                        <a href="https://www.noisli.com/" target="_blank" class="resource-btn" aria-label="Visit Noisli">Visit</a>
+                    <div style="display: flex; justify-content: center; gap: 24px; width: 100%;">
+                        <div class="tool-card">
+                            <h3>Toggl Track</h3>
+                            <p>Track your study time and boost your productivity.</p>
+                            <a href="https://toggl.com/track/" target="_blank" class="resource-btn" aria-label="Visit Toggl Track">Visit</a>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Sleepytime</h3>
+                            <p>Calculate the best time to go to sleep and wake up refreshed.</p>
+                            <a href="https://sleepyti.me/" target="_blank" class="resource-btn" aria-label="Visit Sleepytime">Visit</a>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Noisli</h3>
+                            <p>Mix ambient sounds to improve focus and productivity.</p>
+                            <a href="https://www.noisli.com/" target="_blank" class="resource-btn" aria-label="Visit Noisli">Visit</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,23 +221,35 @@
         </div>
     </footer>
 
-    <!-- Chatbot Section (Flowise Placeholder) -->
-    <section id="campask-chatbot-section" class="dashboard-section chatbot-section">
-        <div class="container">
-            <h2>Ask CampASK (AI Chatbot)</h2>
-            <!--
-                This is a placeholder for the Flowise chatbot widget.
-                In the future, the Flowise embed code or iframe will be inserted here.
-                The chat window will allow students to ask academic questions and get AI-powered help.
-                After the chatbot responds, the app will use the YouTube Data API v3 to recommend videos based on the user's prompt.
-                See js/app.js for planned API integration points.
-            -->
-            <div id="campask-chatbot-placeholder" tabindex="0" aria-label="CampASK Chatbot Placeholder">
-                <p class="chatbot-placeholder-text">CampASK Chatbot coming soon! Here you'll be able to ask any academic question and get instant help, plus video recommendations for deeper learning.</p>
-            </div>
+
+    <!-- Vibe Coding Chatbot Floating Button and Widget -->
+    <button id="vibe-chatbot-fab" aria-label="Open Chatbot" class="chatbot-fab" style="position: fixed; bottom: 32px; right: 32px; width: 64px; height: 64px; border-radius: 50%; background: #b8c6e7; color: #fff; font-size: 2rem; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 1001; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+        💬
+    </button>
+    <div id="vibe-chatbot-widget" style="display:none; position: fixed; bottom: 110px; right: 32px; width: 350px; max-width: 95vw; height: 500px; max-height: 80vh; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); z-index: 2000; overflow: hidden;">
+        <div style="display: flex; justify-content: flex-end; background: #b8c6e7; padding: 8px 12px; border-top-left-radius: 18px; border-top-right-radius: 18px;">
+            <button id="vibe-chatbot-close" aria-label="Close Chatbot" style="background: none; border: none; font-size: 1.5rem; color: #333; cursor: pointer;">&times;</button>
         </div>
-    </section>
+        <!-- Vibe Coding Chatbot Embed -->
+        <iframe src="https://chat.vibecoding.com/embed/campask" title="CampASK Chatbot (Vibe Coding)" width="100%" height="100%" style="border: none; background: transparent;"></iframe>
+    </div>
+    <!-- End Vibe Coding Chatbot UI -->
 
     <script src="js/app.js"></script>
+
+<script>
+// Vibe Coding Chatbot Floating Button Logic
+const fab = document.getElementById('vibe-chatbot-fab');
+const widget = document.getElementById('vibe-chatbot-widget');
+const closeBtn = document.getElementById('vibe-chatbot-close');
+fab.addEventListener('click', () => {
+    widget.style.display = 'block';
+    fab.style.display = 'none';
+});
+closeBtn.addEventListener('click', () => {
+    widget.style.display = 'none';
+    fab.style.display = 'flex';
+});
+</script>
 </body>
 </html>
